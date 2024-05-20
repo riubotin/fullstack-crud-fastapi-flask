@@ -1,0 +1,15 @@
+fullstack-crud-fastapi-flask
+│
+├── backend/          
+│   ├── app.py       
+│   ├── database.db  
+│
+└── frontend/         
+│   ├── app.py        
+│   ├── templates/    
+|   |   ├── index.html
+│   ├── static/       
+│
+└── poetry.toml
+└── project.toml
+└── poetry.lock

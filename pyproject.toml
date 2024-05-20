@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "fullstack-python"
+version = "0.1.0"
+description = ""
+authors = ["jeff <jeff@riubotin.xyz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+flask = "^3.0.3"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
