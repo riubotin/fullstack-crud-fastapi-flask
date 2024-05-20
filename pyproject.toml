@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "fullstack-python"
 version = "0.1.0"
-description = ""
+description = "simple fullstack crud fastapi flask"
 authors = ["jeff <jeff@riubotin.xyz>"]
 readme = "README.md"
 
