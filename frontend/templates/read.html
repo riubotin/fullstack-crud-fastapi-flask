@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Pengguna</title>
+</head>
+<body>
+    <h1>Daftar Pengguna</h1>
+    <ul id="userList"></ul>
+
+    <script>
+        fetch('https://7c2a-180-244-161-166.ngrok-free.app/users/')
+            .then(response => response.json())
+            .then(data => {
+                const users = data.users;
+                const list = document.getElementById('userList');
+                users.forEach(user => {
+                    const item = document.createElement('li');
+                    item.textContent = `ID: ${user.id}, Nama: ${user.name}, Email: ${user.email}`;
+                    list.appendChild(item);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

@@ -20,7 +20,8 @@
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
 
-            fetch('http://127.0.0.1:8000/users/', {
+            //fetch('http://127.0.0.1:8000/users/', {
+            fetch('https://7c2a-180-244-161-166.ngrok-free.app/users/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
